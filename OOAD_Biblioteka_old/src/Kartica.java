@@ -2,7 +2,7 @@ public class Kartica {
 	private int brojKartice;
 	private boolean blokirana;
 	private Korisnik vlasnik;
-	static int count = 0;
+	static int count = 1;
 	
 	public Kartica(){
 		this.blokirana = false;
