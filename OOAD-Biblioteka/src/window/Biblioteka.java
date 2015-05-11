@@ -44,7 +44,7 @@ public class Biblioteka {
 		frame.setBounds(100, 100, 228, 162);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
-		
+
 		JPanel panel = new JPanel();
 		panel.setBounds(10, 11, 187, 105);
 		frame.getContentPane().add(panel);
@@ -61,7 +61,7 @@ public class Biblioteka {
 			}
 		});
 		panel.add(btnNewButton);
-		
+
 		JButton btnNewButton_1 = new JButton("Korisnik");
 		btnNewButton_1.setBounds(49, 64, 81, 23);
 		panel.add(btnNewButton_1);
