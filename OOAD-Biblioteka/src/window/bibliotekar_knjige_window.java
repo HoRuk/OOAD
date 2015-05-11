@@ -8,6 +8,9 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.JTextField;
+import javax.swing.JTextPane;
+import java.awt.Color;
+import java.awt.SystemColor;
 
 public class bibliotekar_knjige_window {
 
@@ -168,11 +171,16 @@ public class bibliotekar_knjige_window {
 		frame.getContentPane().add(panel_3);
 		panel_3.setLayout(null);
 		
-		JLabel lblUcitajKnjiguPo = new JLabel("Ucitaj knjigu \r\npo bar kodu:");
-		lblUcitajKnjiguPo.setHorizontalAlignment(SwingConstants.CENTER);
-		lblUcitajKnjiguPo.setBounds(10, 10, 87, 48);
-		panel_3.add(lblUcitajKnjiguPo);
+		JTextPane txtpnUitajKnjiguPo = new JTextPane();
+		txtpnUitajKnjiguPo.setBackground(SystemColor.control);
+		txtpnUitajKnjiguPo.setEditable(false);
+		txtpnUitajKnjiguPo.setText("U\u010Ditaj knjigu po bar kodu:");
+		txtpnUitajKnjiguPo.setBounds(10, 32, 87, 42);
+		panel_3.add(txtpnUitajKnjiguPo);
+		
+		JButton btnUitaj = new JButton("U\u010Ditaj");
+		btnUitaj.setBounds(8, 85, 89, 23);
+		panel_3.add(btnUitaj);
 		
 	}
-
 }
