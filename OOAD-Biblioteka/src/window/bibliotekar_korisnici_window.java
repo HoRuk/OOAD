@@ -17,6 +17,7 @@ public class bibliotekar_korisnici_window {
 	private JTextField textField_2;
 	private JTextField textField_3;
 	private JTextField textField_4;
+	private JTextField textField_5;
 
 	/**
 	 * Launch the application.
@@ -51,7 +52,7 @@ public class bibliotekar_korisnici_window {
 		frame.getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(10, 11, 190, 240);
+		panel.setBounds(0, 11, 213, 240);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
 		
@@ -67,28 +68,37 @@ public class bibliotekar_korisnici_window {
 		lblGodinaRodjenja.setBounds(0, 77, 84, 24);
 		panel.add(lblGodinaRodjenja);
 		
-		JLabel label = new JLabel("Godina rodjenja:");
-		label.setBounds(0, 112, 84, 24);
-		panel.add(label);
-		
+		JLabel lblAdresaStanovanja = new JLabel("Adresa stanovanja:");
+		lblAdresaStanovanja.setBounds(0, 112, 105, 24);
+		panel.add(lblAdresaStanovanja);
+
 		textField = new JTextField();
-		textField.setBounds(94, 48, 86, 20);
+		textField.setBounds(104, 46, 86, 20);
 		panel.add(textField);
 		textField.setColumns(10);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(94, 79, 86, 20);
+		textField_1.setBounds(104, 79, 86, 20);
 		panel.add(textField_1);
 		textField_1.setColumns(10);
 		
 		textField_2 = new JTextField();
-		textField_2.setBounds(94, 114, 86, 20);
+		textField_2.setBounds(104, 114, 86, 20);
 		panel.add(textField_2);
 		textField_2.setColumns(10);
 		
 		JButton btnPotvrdi = new JButton("Potvrdi");
 		btnPotvrdi.setBounds(59, 206, 89, 23);
 		panel.add(btnPotvrdi);
+		
+		JLabel lblBrojTelefona = new JLabel("Broj telefona:");
+		lblBrojTelefona.setBounds(0, 153, 105, 24);
+		panel.add(lblBrojTelefona);
+		
+		textField_5 = new JTextField();
+		textField_5.setColumns(10);
+		textField_5.setBounds(104, 155, 86, 20);
+		panel.add(textField_5);
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBounds(223, 11, 201, 120);
@@ -99,7 +109,7 @@ public class bibliotekar_korisnici_window {
 		lblPretraiKorisnikaPo.setHorizontalAlignment(SwingConstants.CENTER);
 		lblPretraiKorisnikaPo.setBounds(0, 10, 200, 34);
 		panel_1.add(lblPretraiKorisnikaPo);
-		
+
 		JLabel label_1 = new JLabel("Ime i prezime:");
 		label_1.setBounds(10, 46, 84, 24);
 		panel_1.add(label_1);
@@ -109,32 +119,32 @@ public class bibliotekar_korisnici_window {
 		panel_1.add(textField_3);
 		textField_3.setColumns(10);
 		
-		JButton button = new JButton("Potvrdi");
-		button.setBounds(53, 81, 89, 23);
-		panel_1.add(button);
+		JButton btnPretrai = new JButton("Pretra\u017Ei");
+		btnPretrai.setBounds(53, 81, 89, 23);
+		panel_1.add(btnPretrai);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setBounds(223, 143, 201, 108);
 		frame.getContentPane().add(panel_2);
 		panel_2.setLayout(null);
 		
-		JLabel label_2 = new JLabel("Pretra\u017Ei korisnika po imenu:");
-		label_2.setHorizontalAlignment(SwingConstants.CENTER);
-		label_2.setBounds(0, 0, 200, 34);
-		panel_2.add(label_2);
+		JLabel lblPretraiKorisnikaPo_1 = new JLabel("Pretra\u017Ei korisnika po broju kartice:");
+		lblPretraiKorisnikaPo_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPretraiKorisnikaPo_1.setBounds(0, 0, 200, 34);
+		panel_2.add(lblPretraiKorisnikaPo_1);
 		
-		JLabel label_3 = new JLabel("Ime i prezime:");
-		label_3.setBounds(10, 39, 84, 24);
-		panel_2.add(label_3);
+		JLabel lblBrojKartice = new JLabel("Broj kartice:");
+		lblBrojKartice.setBounds(10, 39, 84, 24);
+		panel_2.add(lblBrojKartice);
 		
 		textField_4 = new JTextField();
 		textField_4.setColumns(10);
 		textField_4.setBounds(104, 41, 86, 20);
 		panel_2.add(textField_4);
 		
-		JButton button_1 = new JButton("Potvrdi");
-		button_1.setBounds(54, 74, 89, 23);
-		panel_2.add(button_1);
+		JButton btnPretrai_1 = new JButton("Pretra\u017Ei");
+		btnPretrai_1.setBounds(54, 74, 89, 23);
+		panel_2.add(btnPretrai_1);
 	}
 
 }
