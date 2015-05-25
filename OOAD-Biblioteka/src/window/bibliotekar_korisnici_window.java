@@ -55,35 +55,35 @@ public class bibliotekar_korisnici_window {
 		panel.setBounds(0, 11, 213, 240);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
-		
+
 		JLabel lblNewLabel = new JLabel("Dodaj novog korisnika:");
 		lblNewLabel.setBounds(10, 11, 121, 24);
 		panel.add(lblNewLabel);
 		
 		JLabel lblImeIPrezime = new JLabel("Ime i prezime:");
-		lblImeIPrezime.setBounds(0, 46, 84, 24);
+		lblImeIPrezime.setBounds(10, 46, 84, 24);
 		panel.add(lblImeIPrezime);
 		
 		JLabel lblGodinaRodjenja = new JLabel("Godina rodjenja:");
-		lblGodinaRodjenja.setBounds(0, 77, 84, 24);
+		lblGodinaRodjenja.setBounds(10, 81, 84, 24);
 		panel.add(lblGodinaRodjenja);
 		
 		JLabel lblAdresaStanovanja = new JLabel("Adresa stanovanja:");
-		lblAdresaStanovanja.setBounds(0, 112, 105, 24);
+		lblAdresaStanovanja.setBounds(10, 112, 105, 24);
 		panel.add(lblAdresaStanovanja);
 
 		textField = new JTextField();
-		textField.setBounds(104, 46, 86, 20);
+		textField.setBounds(114, 46, 86, 20);
 		panel.add(textField);
 		textField.setColumns(10);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(104, 79, 86, 20);
+		textField_1.setBounds(114, 83, 86, 20);
 		panel.add(textField_1);
 		textField_1.setColumns(10);
 		
 		textField_2 = new JTextField();
-		textField_2.setBounds(104, 114, 86, 20);
+		textField_2.setBounds(114, 114, 86, 20);
 		panel.add(textField_2);
 		textField_2.setColumns(10);
 		
@@ -92,12 +92,12 @@ public class bibliotekar_korisnici_window {
 		panel.add(btnPotvrdi);
 		
 		JLabel lblBrojTelefona = new JLabel("Broj telefona:");
-		lblBrojTelefona.setBounds(0, 153, 105, 24);
+		lblBrojTelefona.setBounds(10, 153, 105, 24);
 		panel.add(lblBrojTelefona);
 		
 		textField_5 = new JTextField();
 		textField_5.setColumns(10);
-		textField_5.setBounds(104, 155, 86, 20);
+		textField_5.setBounds(114, 155, 86, 20);
 		panel.add(textField_5);
 		
 		JPanel panel_1 = new JPanel();

@@ -11,7 +11,13 @@ import java.awt.event.ActionEvent;
 public class bibliotekar_main_window {
 
 	private JFrame frame;
+	private JButton btnObrisiPostojeegKorisnika;
+	private JButton btnOpcijeSaKnjigama;
 
+	public JFrame GetFrame(){
+		return this.frame;
+	}
+	
 	/**
 	 * Launch the application.
 	 */
@@ -20,8 +26,10 @@ public class bibliotekar_main_window {
 			public void run() {
 				try {
 					bibliotekar_main_window window = new bibliotekar_main_window();
+					window.frame.setTitle("zovem se");
 					window.frame.setVisible(true);
 				} catch (Exception e) {
+					System.out.println("dosao");
 					e.printStackTrace();
 				}
 			}
@@ -45,17 +53,18 @@ public class bibliotekar_main_window {
 		frame.getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(10, 11, 381, 149);
+		panel.setBounds(10, 11, 215, 149);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
 		
-		JButton btnObrisiPostojeegKorisnika = new JButton("Opcije sa korisnikom");
+		btnObrisiPostojeegKorisnika = new JButton("Opcije sa korisnikom");
 		btnObrisiPostojeegKorisnika.setBounds(35, 27, 139, 34);
 		panel.add(btnObrisiPostojeegKorisnika);
 		
-		JButton btnOpcijeSaKnjigama = new JButton("Opcije sa knjigama");
+		btnOpcijeSaKnjigama = new JButton("Opcije sa knjigama");
 		btnOpcijeSaKnjigama.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnOpcijeSaKnjigama.setText("hoæu knjige");
 			}
 		});
 		btnOpcijeSaKnjigama.setBounds(35, 87, 139, 34);

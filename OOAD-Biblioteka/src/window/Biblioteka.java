@@ -54,15 +54,23 @@ public class Biblioteka {
 		lblOdaberiteNainPrijave.setBounds(11, 5, 164, 14);
 		panel.add(lblOdaberiteNainPrijave);
 		
-		JButton btnNewButton = new JButton("Bibliotekar");
+		JButton btnNewButton = new JButton("promijenio");
 		btnNewButton.setBounds(49, 30, 81, 23);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnNewButton.setText("pritisnuo");
 			}
 		});
 		panel.add(btnNewButton);
 
 		JButton btnNewButton_1 = new JButton("Korisnik");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				btnNewButton_1.setText("pritisnuo");
+				bibliotekar_main_window window = new bibliotekar_main_window();
+				window.GetFrame().setVisible(true);
+			}
+		});
 		btnNewButton_1.setBounds(49, 64, 81, 23);
 		panel.add(btnNewButton_1);
 	}

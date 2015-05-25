@@ -4,7 +4,7 @@ public class Knjiga {
 	private int barKod;
 	private boolean zauzece;
 	private Korisnik trenutniVlasnik;
-	
+
 	public void zaduzi(Korisnik vlasnik){
 		this.trenutniVlasnik = vlasnik;
 		zauzece = true;

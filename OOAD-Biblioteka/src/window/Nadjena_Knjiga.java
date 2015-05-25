@@ -7,6 +7,8 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Nadjena_Knjiga {
 
@@ -18,6 +20,9 @@ public class Nadjena_Knjiga {
 	private JTextField textField_11;
 	private JTextField textField_12;
 	private JTextField textField_13;
+	private JButton btnRazduiKnjigu;
+	private JButton button;
+	private JButton btnNewButton;
 
 	/**
 	 * Launch the application.
@@ -128,15 +133,19 @@ public class Nadjena_Knjiga {
 		panel.add(panel_1);
 		panel_1.setLayout(null);
 		
-		JButton btnRazduiKnjigu = new JButton("Razdu\u017Ei knjigu");
+		btnRazduiKnjigu = new JButton("Razdu\u017Ei knjigu");
+		btnRazduiKnjigu.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnRazduiKnjigu.setBounds(10, 11, 110, 23);
 		panel_1.add(btnRazduiKnjigu);
 		
-		JButton button = new JButton("Obri\u0161i knjigu ");
+		button = new JButton("Obri\u0161i knjigu ");
 		button.setBounds(10, 39, 110, 23);
 		panel_1.add(button);
 		
-		JButton btnNewButton = new JButton("New button");
+		btnNewButton = new JButton("New button");
 		btnNewButton.setBounds(130, 11, 72, 51);
 		panel_1.add(btnNewButton);
 	}
